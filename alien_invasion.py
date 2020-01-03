@@ -30,7 +30,9 @@ def run_game():
 
         gf.check_events(ai_settings, screen, ship, bullets)#重构代码，让其变得更加简洁
         ship.update()
-        bullets.update()
+        gf.update_bullets(bullets)
+
+
         gf.update_screen(ai_settings, screen, ship, bullets)
 
 run_game()
